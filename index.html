@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MandrinCoder. 🧑‍💻 — Digital Product Design Agency | Award Winning UX &amp; UI Agency</title>
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>LAZAREV.</h1>
+        <div class="nav-part2">
+            <div class="nav-elem">
+                <h4>Case Studies</h4>
+                <h5><span>Case Studies</span></h5>
+            </div>
+            <div class="nav-elem">
+                <h4>Areas Of Experties</h4>
+                <h5><span>🔥AI & ML</span></h5>
+                <h5><span>Fintech</span></h5>
+                <h5><span>Real Estate</span></h5>
+                <h5><span>E-Commerce</span></h5>
+                <h5><span>Web3</span></h5>
+            </div>
+            <div class="nav-elem">
+                <h4>UI/UX Design</h4>
+                <h5><span>UX Audit</span></h5>
+                <h5><span>UI Design</span></h5>
+                <h5><span>UX Design</span></h5>
+                <h5><span>UX Research</span></h5>
+            </div>
+            <div class="nav-elem">
+                <h4>Product Design</h4>
+                <h5><span>SaaS</span></h5>
+                <h5><span>Web App</span></h5>
+                <h5><span>Mobile App</span></h5>
+                <h5><span>Website Design</span></h5>
+            </div>
+            <div class="nav-elem">
+                <h4>Design Process</h4>
+                <h5><span>MVP</span></h5>
+                <h5><span>ReLaunch</span></h5>
+            </div>
+            <div class="nav-elem">
+                <h4>About us</h4>
+                <h5><span>Our Story</span></h5>
+                <h5><span>Clients's Feedback</span></h5>
+                <h5><span>Career</span></h5>
+                <h5><span>How to Apply</span></h5>
+                <h5><span>News&Articles</span></h5>
+            </div>
+        </div>
+        <button>Let's Talk <svg fill="none" viewBox="0 0 20 20">
+                <path fill="#fff"
+                    d="M2.5 14.375V17.5h3.125l9.217-9.217-3.125-3.125L2.5 14.375Zm14.758-8.508a.83.83 0 0 0 0-1.175l-1.95-1.95a.83.83 0 0 0-1.175 0l-1.525 1.525 3.125 3.125 1.525-1.525Z">
+                </path>
+            </svg></button>
+        <div id="nav-bottom">
+
+        </div>
+    </nav>
+    <div id="main">
+        <div id="page1">
+            <h1>AI & ML PR<span><svg fill="none" viewBox="0 0 131 136" class="c-bttn__morph">
+                        <path data-morph="end" fill="#fff"
+                            d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"
+                            class="g-path"></path>
+                        <path data-morph="start" fill="#fff"
+                            d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"
+                            class="g-path"
+                            data-original="M65.72 109.14c10.08 0 17.76-3.78 23.04-11.34 5.4-7.68 8.1-17.64 8.1-29.88 0-12.24-2.7-22.2-8.1-29.88-5.28-7.68-12.96-11.52-23.04-11.52-9.96 0-17.7 3.84-23.22 11.52-5.4 7.68-8.1 17.64-8.1 29.88 0 12.12 2.7 22.02 8.1 29.7 5.52 7.68 13.26 11.52 23.22 11.52Zm46.08 7.02c-11.64 12.6-27.06 18.9-46.26 18.9s-34.62-6.3-46.26-18.9C7.76 103.56 2 87.48 2 67.92c0-19.56 5.76-35.64 17.28-48.24C30.92 7.08 46.34.78 65.54.78s34.62 6.3 46.26 18.9c11.64 12.6 17.46 28.68 17.46 48.24 0 19.56-5.82 35.64-17.46 48.24Z">
+                        </path>
+                    </svg></span>JECT</h1>
+            <h1>DESIGN Agency</h1>
+            <p>We partner with AI &amp; ML &nbsp;businesses, guiding them from series A<br>to series D and beyond with
+                our expertise in</p>
+            <div id="page1-something">
+                <h4>Brand Design</h4>
+                <h4>User Experience</h4>
+                <h4>and</h4>
+                <h4>Digital Product Design</h4>
+            </div>
+            <div id="moving-id">
+                <div id="blur-left"></div>
+                <div class="move">
+                    <img src="https://lazarev.kiev.ua/la24/awww.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/rd.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/webby.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/fwa.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/forbes.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/wf.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/pmi.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/adweek.svg" alt="">
+                </div>
+                <div class="move">
+                    <img src="https://lazarev.kiev.ua/la24/awww.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/rd.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/webby.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/fwa.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/forbes.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/wf.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/pmi.svg" alt="">
+                    <img src="https://lazarev.kiev.ua/la24/adweek.svg" alt="">
+                </div>
+                <div id="blur-right"></div>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="page2-left">
+                <p>Exclusive insights into <br>UI/UX and product design</p>
+                <h5>Being a design studio at the forefront of digital transformation and product design, we take it upon
+                    ourselves to drop some knowledge, share insights, let out insider tips, and put our work on full
+                    display</h5>
+            </div>
+            <div id="page2-right">
+                <div class="right-elem">
+                    <h2>The Gestalt Principles of Design: How <br>Design Forms Visual Perception</h2>
+                    <img src="https://plus.unsplash.com/premium_photo-1681400531416-61a17303ddc7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzaWduJTIwZm9ybXMlMjB2aXN1YWwlMjBwZWVyY2VwdGlvbnxlbnwwfDB8MHx8fDA%3D"
+                        alt="">
+                </div>
+                <div class="right-elem">
+                    <h2>Effective Design Principles for Crypto Web <br> Design</h2>
+                    <img src="https://images.unsplash.com/photo-1640032152000-f273e2ca6922?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3J5cHRvJTIwd2VifGVufDB8MHwwfHx8MA%3D%3D"
+                        alt="">
+                </div>
+                <div class="right-elem">
+                    <h2>How to design an AI interface users will <br>Trust in 2024?</h2>
+                    <img src="https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QWklMjBpbnRlcmZhY2V8ZW58MHwwfDB8fHww"
+                        alt="">
+                </div>
+                <div class="right-elem">
+                    <h2>How AI Influences Design and The <br> Reciprocal Impact of UX on AI-Driven <br> Products</h2>
+                    <img src="https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJlY2lwcm9jYWwlMjBpbXBhY3QlMjBvbiUyMGFpfGVufDB8MHwwfHx8MA%3D%3D"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div id="page3">
+            <video src="https://lazarev.kiev.ua/la24/la-reel--min.mp4"></video>
+            <div class="page3-center">
+                <div class="icon">
+                    <i class="ri-play-fill"></i>
+                </div>
+                <h5>Watch ShowReel</h5>
+            </div>
+        </div>
+        <div id="page4">
+            <div class="section">
+                <div class="sec-left">
+                    <h2>Metatasq</h2>
+                    <p>A B2B Blockchain platform that helps brands engage with their community, monetize loyal consumers
+                        more effectively, and reward high-value actions with exclusive experiences</p>
+                </div>
+                <div class="sec-right">
+                    <img src="https://images.unsplash.com/photo-1632037916378-d92ed2e15aaf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uZXloZWlzdHxlbnwwfDB8MHx8fDA%3D"
+                        alt="">
+                    <video src="https://lazarev.kiev.ua/cases/la24/metastaq-cover-big.mp4"></video>
+                </div>
+            </div>
+            <div class="section">
+                <div class="sec-left">
+                    <h2>Payoneer</h2>
+                    <p>Rethinking the user experience and interface design for the top financial services firm listed on
+                        the Financial Times FT 1000.</p>
+                </div>
+                <div class="sec-right">
+                    <img src="https://plus.unsplash.com/premium_photo-1681627553506-51a9afddb15d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNyZWRpdCUyMGNhcmR8ZW58MHwwfDB8fHww"
+                        alt="">
+                    <video src="https://lazarev.kiev.ua/cases/la24/payoneer-cover-big.mp4"></video>
+                </div>
+            </div>
+        </div>
+        <div id="page5">
+            <button>Become a Client <i class="ri-arrow-right-up-line"></i></button>
+            <div id="page5-right">
+                <p><span>Services</span>We lead your startup at every step of its <span></span>growth, providing
+                    unparalleled personal service at every interaction. Whether it's launching an MVP, revamping an
+                    existing product, securing funding with UI prototypes, increasing customer engagement, or boosting
+                    conversions, we develop a suite of custom-tailored design services to fulfill your expectations.</p>
+                <div id="page5-content">
+                    <div class="uiux">
+                        <details open>
+                            <summary>
+                                <h1>UI/UX Design</h1>
+                                <div id="flex">
+                                    <h4>UX Audit</h4>
+                                    <h4>UI Design</h4>
+                                    <h4>UX Design</h4>
+                                    <h4>UX Research</h4>
+                                </div>
+                            </summary>
+                            <div id="page5-container">
+                                <div class="page5-elem">
+                                    <div class="over"></div>
+                                    <h3>UX Research</h3>
+                                    <p>Before making any design solutions, our team conducts UX research, leaving no
+                                        stone unturned. This entails market analysis, competitor assessment,
+                                        crystallizing your product positioning, and defining comprehensive feature
+                                        lists.</p>
+                                    <i class="ri-arrow-right-up-fill"></i>
+                                </div>
+                                <div class="page5-elem">
+                                    <div class="over"></div>
+                                    <h3>UI Design</h3>
+                                    <p>The service encompasses all aspects of creating visually appealing digital
+                                        interfaces, starting from setting UI design direction to developing UI design
+                                        concepts and design systems and, finally, facilitating a seamless
+                                        design-to-development hand-off.
+                                    </p>
+                                    <i class="ri-arrow-right-up-fill"></i>
+                                </div>
+                                <div class="page5-elem">
+                                    <div class="over"></div>
+                                    <h3>UX Design</h3>
+                                    <p>UX designers take on the task of transferring user research insights and design
+                                        solutions onto the interface. Through a series of user tests and iterative
+                                        sessions, we ensure the digital experience is both scalable and highly
+                                        functional.
+                                    </p>
+                                    <i class="ri-arrow-right-up-fill"></i>
+                                </div>
+                                <div class="page5-elem">
+                                    <div class="over"></div>
+                                    <h3>UX Audit</h3>
+                                    <p>Ahead of shaking up the market with a product relaunch or UI/UX redesign, our
+                                        researchers do UX auditing. It involves an evaluation of the digital interface
+                                        from UX, marketing, and business standpoints, ultimately providing valuable
+                                        recommendations for improvement.
+                                    </p>
+                                    <i class="ri-arrow-right-up-fill"></i>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="product">
+                        <details>
+                            <summary>
+                                <h1>Product Design</h1>
+                                <div id="flex">
+                                    <h4>Website Design</h4>
+                                    <h4>Mobile App</h4>
+                                    <h4>Web App</h4>
+                                    <h4>SaaS</h4>
+                                </div>
+                            </summary>
+                            <div id="page5-container">
+                                <div class="page5-elem">
+                                    <div class="over"></div>
+                                    <h3>Website Design</h3>
+                                    <p>To ensure the digital presence and growth of your business, we create a
+                                        conversion-oriented website or promotional landing page. By adhering to your
+                                        brand
+                                        guidelines, we design a visually pleasing marketing website that connects with
+                                        your
+                                        customers. </p>
+                                    <i class="ri-arrow-right-up-fill"></i>
+                                </div>
+                                <div class="page5-elem">
+                                    <div class="over"></div>
+                                    <h3>Mobile App</h3>
+                                    <p>Our product team helps build B2B and B2C mobile apps with truly convenient
+                                        digital
+                                        experiences. We ensure the app design lets users complete their desired actions
+                                        in
+                                        minimum steps and get the most value out of it.
+                                    </p>
+                                    <i class="ri-arrow-right-up-fill"></i>
+                                </div>
+                                <div class="page5-elem">
+                                    <div class="over"></div>
+                                    <h3>Web App</h3>
+                                    <p>Our team builds web apps tailored for enterprises (B2B) to facilitate daily work
+                                        operations, streamline business processes, etc. As well as do we design web apps
+                                        for
+                                        end-users (B2C) for business and routine purposes.
+                                    </p>
+                                    <i class="ri-arrow-right-up-fill"></i>
+                                </div>
+                                <div class="page5-elem">
+                                    <div class="over"></div>
+                                    <h3>SaaS</h3>
+                                    <p>From the moment users step onboard, we unlock the true potential of your digital
+                                        solution and create an ‘aha’ moment. This way, we shield against high churn
+                                        rates
+                                        and amp up your Monthly Recurring Revenue (MRR).
+                                    </p>
+                                    <i class="ri-arrow-right-up-fill"></i>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page6">
+            <h1>Digital Product Design Process</h1>
+            <div id="page6-content">
+                <div id="blue-btn">
+                    <h4>See All Case Studies <i class="ri-arrow-right-up-line"></i></h4>
+                    <h4>See All Case Studies <i class="ri-arrow-right-up-line"></i></h4>
+                </div>
+                <div id="right-6">
+                    <p>We do not take on projects that involve blind conformity or designing out of context. We won't
+                        settle for a user interface design that is misaligned with your product and digital strategy.
+                        Neither will we launch web development ventures without user testing to validate our design
+                        solutions.</p>
+                    <p>Instead, we create scalable digital products that meet the ever-evolving demands of our
+                        customers, ensuring long-term sustainability.</p>
+                </div>
+            </div>
+            <div id="page6-bottom">
+                <div id="btm6-part1" class="btm6-parts"></div>
+                <div id="btm6-part2" class="btm6-parts">
+                    <h5>Product Strategy</h5>
+                    <h4><span>1</span>Strategy WorkShop</h4>
+                    <h4><span>2</span>Idea Validation</h4>
+                    <h4><span>3</span>Market Research</h4>
+                    <h4><span>4</span>Product Polishing</h4>
+                    <h4><span>5</span>UX Research</h4>
+                    <h4><span>6</span>Functional Decomposition</h4>
+                </div>
+                <div id="btm6-part3" class="btm6-parts">
+                    <h5>UX Design</h5>
+                    <h4><span>7</span>User Flows</h4>
+                    <h4><span>8</span>Prototyping</h4>
+                </div>
+                <div id="btm6-part4" class="btm6-parts">
+                    <h5>UI Design</h5>
+                    <h4><span>9</span>MoodBands</h4>
+                    <h4><span>10</span>Visual Design</h4>
+                    <h4><span>11</span>Hand-off</h4>
+                </div>
+                <div id="btm6-part5" class="btm6-parts">
+                    <h5>Delivery</h5>
+                </div>
+            </div>
+        </div>
+        <div id="page7">
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
